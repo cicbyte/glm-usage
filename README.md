@@ -7,6 +7,7 @@ CLI API 用量监控工具 — 查询、监控智谱 AI API 用量限额。
 > - [Windows 悬浮球客户端](apps/windows-wpf/glmusage/README.md) — 桌面悬浮球，水位动画，系统托盘
 > - [iOS Scriptable 小组件](apps/ios-scriptable/README.md) — 桌面小组件，用量进度条
 > - [Claude Code Skill](skills/glm-usage/SKILL.md) — 在 Claude Code 中查询用量
+> - [macOS 菜单栏应用](apps/glm-usage-mac/README.md) — 菜单栏实时显示用量，阈值通知
 
 ## 功能
 
