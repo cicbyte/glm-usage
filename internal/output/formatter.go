@@ -2,10 +2,18 @@ package output
 
 import (
 	"fmt"
+	"sort"
 	"time"
 
 	"github.com/cicbyte/glm-usage/internal/models"
 )
+
+// limitTypeOrder 定义限额类型的显示优先级，值越小越靠前
+var limitTypeOrder = map[string]int{
+	"TOKENS_LIMIT":  0,
+	"TIME_LIMIT":    1,
+	"REQUEST_LIMIT": 2,
+}
 
 // Formatter 输出格式化器接口
 type Formatter interface {
@@ -60,6 +68,10 @@ func FormatUsageData(data *models.UsageData, timezone string) *models.QueryResul
 
 		result.Limits = append(result.Limits, fl)
 	}
+
+	sort.Slice(result.Limits, func(i, j int) bool {
+		return limitTypeOrder[data.Limits[i].Type] < limitTypeOrder[data.Limits[j].Type]
+	})
 
 	return result
 }

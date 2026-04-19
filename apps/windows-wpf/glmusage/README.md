@@ -2,6 +2,10 @@
 
 GLM API 用量监控悬浮球，实时显示 Token 和 MCP 工具调用配额使用情况。
 
+## 界面预览
+
+![preview](images/preview.png)
+
 ## 功能
 
 - **悬浮球** — 桌面悬浮显示用量百分比，颜色随用量变化（绿 → 黄 → 红），支持拖拽定位
@@ -14,7 +18,17 @@ GLM API 用量监控悬浮球，实时显示 Token 和 MCP 工具调用配额使
 
 ## 安装
 
-下载 `installer\GLMUsage-Setup-1.0.0.exe` 运行安装。
+Git 仓库未包含编译产物，需先自行构建：
+
+```bash
+# 1. 运行 publish.bat 编译（需要 .NET 8 SDK）
+publish.bat
+
+# 2. 可选：打包为安装程序（需要 Inno Setup 6）
+ISCC.exe installer.iss
+```
+
+直接运行 `publish\GLMUsage.exe` 即可，或使用生成的 `installer\GLMUsage-Setup-1.0.0.exe` 安装。
 
 需要 [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)。
 

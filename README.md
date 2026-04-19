@@ -12,6 +12,16 @@ CLI API 用量监控工具 — 查询、监控智谱 AI API 用量限额。
 | `glm-usage status` | 配置诊断：显示配置信息、API 连接测试、用量概览 |
 | `glm-usage version` | 显示版本信息 |
 
+## 界面预览
+
+**单次查询**
+
+![glm-usage-query](images/glm-usage-query.png)
+
+**持续监控**
+
+![glm-usage-monitor](images/glm-usage-monitor.png)
+
 ## 安装
 
 ```bash

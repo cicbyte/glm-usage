@@ -4,22 +4,32 @@
 
 ## 效果预览
 
-- 深色背景小组件，显示套餐等级
-- MCP 用量：`已用/总量` + 进度条（绿/黄/红三色）
-- Token 用量：百分比显示
-- 超过 90% 自动弹出通知提醒
-- 每 5 分钟自动刷新
+**App Store**
+
+![appstore](images/001-appstore.jpg)
+
+**编辑小组件**
+
+![widget-config](images/002-widget-config.jpg)
+
+**小组件配置**
+
+![widget-setting](images/003-widget-setting.jpg)
+
+**小组件预览**
+
+![widget-preview](images/004-widget-preview.jpg)
 
 ## 前置条件
 
 - iOS 16+ 设备
-- [Scriptable](https://apps.apple.com/app/scriptable/id1405459188) App
+- [Scriptable](https://apps.apple.com/cn/app/scriptable/id1405459188) App
 - 智谱 AI 开放平台 API Key（[获取地址](https://open.bigmodel.cn/)）
 
 ## 安装
 
-1. 打开 Scriptable App
-2. 点击右上角 **+** 新建脚本
+1. 在 App Store 搜索并安装 [Scriptable](https://apps.apple.com/cn/app/scriptable/id1405459188)
+2. 打开 Scriptable App，点击右上角 **+** 新建脚本
 3. 将 `main.js` 的内容粘贴到编辑器中（或通过 AirDrop / iCloud 文件导入）
 4. 替换脚本顶部的 API Key：
 
