@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.pbxuser
+!default.pbxuser
+*.perspectivev3
+!default.perspectivev3
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+
+# Misc
+*.swp
+*~
